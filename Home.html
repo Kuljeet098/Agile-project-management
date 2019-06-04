@@ -26,44 +26,46 @@
 <div class="topnav" id="myTopnav">
   <a class="active" href="Home.html">Home</a>
   <a button="logout" href="login.html">Logout</a>
+  <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Search</button>
+  </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
    <i class="fa fa-bars"></i>
   </a>
 </div>
-<div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">Search Here</button>
-<div id="myDropdown" class="dropdown-content">
-    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-	<button type="submit"><i class="fa fa-search"></i></button>
+
+  <div id="myDropdown" class="dropdown-content">
+  <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
 <ul id="myUL">
- <a href="videoplayback.mp4">video 1</a>
-<a href="videoplayback1.mp4">video 2</a>
-<a href="videoplayback2.mp4">video 3</a>
-<a href="videoplayback3.mp4">video 4</a>
-<a href="videoplayback4.mp4">video 5</a>
+<a href="videoplayback.mp4">cardio</a>
+<a href="videoplayback1.mp4">fitness</a>
+<a href="videoplayback2.mp4">isolation</a>
+<a href="videoplayback3.mp4">strength</a>
+<a href="videoplayback4.mp4">lean gaining</a>
 </ul>
+</div>
 <!-- /* Creating Video List */-->
 <h2 align="center">Gallery</h2>
 <div class="scrollmenu">
 <p> Pilates</p>
 	<video id="video1" width="420" controls >
-    <source src="videoplayback.mp4" type="video/mp4">
+    <source src="videoplayback.mp4" alt="cardio" type="video/mp4">
 	</video>
 	
 	<video id="video1" width="420" controls>
-    <source src="videoplayback1.mp4" type="video/mp4">
+    <source src="videoplayback1.mp4"  alt="fitness" type="video/mp4">
 	</video>
 	
 	<video id="video1" width="420" controls>
-    <source src="videoplayback2.mp4" type="video/mp4">
+    <source src="videoplayback2.mp4"  alt="isolation" type="video/mp4">
 	</video>
 	
 	<video id="video1" width="420" controls>
-    <source src="videoplayback3.mp4" type="video/mp4">
+    <source src="videoplayback3.mp4"  alt="strength" type="video/mp4">
 	</video>
 	
 	<video id="video1" width="420" controls>
-    <source src="videoplayback4.mp4" type="video/mp4">
+    <source src="videoplayback4.mp4"  alt="lean gaining" type="video/mp4">
 	</video>
 
 </div> 
