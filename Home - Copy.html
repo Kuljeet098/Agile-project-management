@@ -1,0 +1,311 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head> 
+<!-- to link the style of the webpage -->
+<link rel="stylesheet" type="text/css" href="mystyle.css"> 
+
+<!-- to link the icons used for this web page -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+<!-- linking scripts-->
+<script src="scripts.js"></script>
+
+</head>
+<body>
+
+<!--  headings -->
+<h1><img src="logo.png" alt="logo" > Club Ex</h1>
+<h2> Maintain & Improve your fitness with us</h2>
+
+
+
+<!-- /* Creating Navigation bar */-->
+<div class="topnav" id="myTopnav">
+  <a  href="Home.html">Home</a>
+  <a  class= "active" href="Home - Copy.html">Rate Videos</a>
+  <a button="logout" href="login.html">Logout</a>
+<a  href="stats.html">View Statistics</a>
+  <div class="dropdown">
+  <button onclick="myFunction()" id ="id01" class="dropbtn">Search</button>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+   <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+  <div id="myDropdown" class="dropdown-content">
+  <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+   <button onclick="sortList()">Sort(A-Z)</button>
+<ul id="id01">
+<a href="videoplayback1.mp4" target= "_blank">fitness</a>
+<a href="videoplayback.mp4" target= "_blank">cardio</a>
+<a href="videoplayback2.mp4" target= "_blank">isolation</a>
+<a href="videoplayback3.mp4" target= "_blank">strength</a>
+<a href="videoplayback4.mp4" target= "_blank">leangaining</a>
+</ul>
+</div>
+<!-- /* Creating Video List */-->
+<h2 align="center">Rate Our Videos</h2>
+<div id="container" class="container">
+<div id="id02" class="scrollmenu">
+<h3> Aerobics</h3>
+	<div>
+	<video id="video" class="column" width="420" controls >
+    <source src="videoplayback.mp4" alt="cardio" type="video/mp4">	
+	</video>
+	<div class="overlay">
+	<p>Cardio</p>
+	<button name="btn1" type="submit" class="signupbtn" onclick="likebtn()">like</button>
+	<button  name="btn2" type="dislike" class="signupbtn" onclick="dislikebtn()">Unlike</button>
+	<div id="result"></div><br>
+	</div>
+	</div>
+	
+	<div>	
+	<video id="video1" width="420" controls>
+    <source src="videoplayback1.mp4"  alt="fitness" type="video/mp4">
+	</video>
+	<div class="overlay">
+	<p>Fitness</p>
+	<button name="btn3" type="submit" class="signupbtn" onclick="likebtn()">like</button>
+	<button name="btn4" type="dislike" class="signupbtn" onclick="dislikebtn()">Unlike</button>
+	<div id="result1"></div><br>
+	</div>
+	</div>
+	
+	<div>
+	<video id="video2" width="420" controls>
+    <source src="videoplayback2.mp4"  alt="isolation" type="video/mp4">
+	</video>
+	<div class="overlay">
+	<p>Isolation</p>
+	<button type="submit" class="signupbtn" onclick="likebtn()">like</button>
+	<button type="dislike" class="signupbtn" onclick="dislikebtn()">Unlike</button>
+	<div id="result2"></div><br>
+	</div>
+	</div>
+	
+	
+	<div>
+	<video id="video4" width="420" controls>
+    <source src="videoplayback4.mp4"  alt="lean gaining" type="video/mp4">
+	</video>
+	<div class="overlay">
+	<p>Lean Gaining</p>
+	<button type="submit" class="signupbtn" onclick="likebtn()">like</button>
+	<button type="dislike" class="signupbtn" onclick="dislikebtn()">Unlike</button>
+	<div id="result4"></div><br>
+	</div>
+	</div>
+	
+	<div>
+	<video id="video3" width="420" controls>
+    <source src="videoplayback3.mp4"  alt="strength" type="video/mp4">
+	</video>
+	<div class="overlay">
+	<p>Strength</p>
+	<button type="submit" class="signupbtn" onclick="likebtn()">like</button>
+	<button type="dislike" class="signupbtn" onclick="dislikebtn()">Unlike</button>
+	<div id="result3"></div><br>
+	</div>
+	</div>
+	
+</div>
+
+<div class="scrollmenu">
+<h3> Boxing</h3>
+
+   <div>
+	<video id="video1" class="column" width="420" controls>
+    <source src="videoplayback.mp4" alt="cardio" type="video/mp4">	
+	</video>
+	<div class="overlay">
+	<label>Cardio</label>
+	<button type="submit" class="signupbtn" onclick="likebtn()">like</button>
+	<button type="dislike" class="signupbtn" onclick="dislikebtn()">Unlike</button>
+	<div id="result"></div><br>
+	</div>
+	</div>
+	
+	<div>	
+	<video id="video1" width="420" controls>
+    <source src="videoplayback1.mp4"  alt="fitness" type="video/mp4">
+	</video>
+	<div class="overlay">
+	<label>Fitness</label>
+	<button type="submit" class="signupbtn" onclick="likebtn()">like</button>
+	<button type="dislike" class="signupbtn" onclick="dislikebtn()">Unlike</button>
+	<div id="result"></div><br>
+	</div>
+	</div>
+	
+	<div>
+	<video id="video1" width="420" controls>
+    <source src="videoplayback2.mp4"  alt="isolation" type="video/mp4">
+	</video>
+	<div class="overlay">
+	<label>Isolation</label>
+	<button type="submit" class="signupbtn" onclick="likebtn()">like</button>
+	<button type="dislike" class="signupbtn" onclick="dislikebtn()">Unlike</button>
+	<div id="result"></div><br>
+	</div>
+	</div>
+	
+	<div>
+	<video id="video1" width="420" controls>
+    <source src="videoplayback4.mp4"  alt="lean gaining" type="video/mp4">
+	</video>
+	<div class="overlay">
+	<label>Lean Gaining</label>
+	<button type="submit" class="signupbtn" onclick="likebtn()">like</button>
+	<button type="dislike" class="signupbtn" onclick="dislikebtn()">Unlike</button>
+	<div id="result"></div><br>
+	</div>
+	</div>
+	
+	<div>
+	<video id="video1" width="420" controls>
+    <source src="videoplayback3.mp4"  alt="strength" type="video/mp4">
+	</video>
+	<div class="overlay">
+	<label>Strength</label>
+	<button type="submit" class="signupbtn" onclick="likebtn()">like</button>
+	<button type="dislike" class="signupbtn" onclick="dislikebtn()">Unlike</button>
+	<div id="result"></div><br>
+	</div>
+	</div>
+</div> 
+<div class="scrollmenu">
+<h3> Pilates</h3>
+
+	<div>
+	<video id="video1" class="column" width="420" controls>
+    <source src="videoplayback.mp4" alt="cardio" type="video/mp4">	
+	</video>
+	<div class="overlay">
+	<label>Cardio</label>
+	<button type="submit" class="signupbtn" onclick="likebtn()">like</button>
+	<button type="dislike" class="signupbtn" onclick="dislikebtn()">Unlike</button>
+	<div id="result"></div><br>
+	</div>
+	</div>
+	
+	<div>	
+	<video id="video1" width="420" controls>
+    <source src="videoplayback1.mp4"  alt="fitness" type="video/mp4">
+	</video>
+	<div class="overlay">
+	<label>Fitness</label>
+	<button type="submit" class="signupbtn" onclick="likebtn()">like</button>
+	<button type="dislike" class="signupbtn" onclick="dislikebtn()">Unlike</button>
+	<div id="result"></div><br>
+	</div>
+	</div>
+	
+	<div>
+	<video id="video1" width="420" controls>
+    <source src="videoplayback2.mp4"  alt="isolation" type="video/mp4">
+	</video>
+	<div class="overlay">
+	<label>Isolation</label>
+	<button type="submit" class="signupbtn" onclick="likebtn()">like</button>
+	<button type="dislike" class="signupbtn" onclick="dislikebtn()">Unlike</button>
+	<div id="result"></div><br>
+	</div>
+	</div>
+	
+	<div>
+	<video id="video1" width="420" controls>
+    <source src="videoplayback4.mp4"  alt="lean gaining" type="video/mp4">
+	</video>
+	<div class="overlay">
+	<label>Lean Gaining</label>
+	<button type="submit" class="signupbtn" onclick="likebtn()">like</button>
+	<button type="dislike" class="signupbtn" onclick="dislikebtn()">Unlike</button>
+	<div id="result"></div><br>
+	</div>
+	</div>
+	
+	<div>
+	<video id="video1" width="420" controls>
+    <source src="videoplayback3.mp4"  alt="strength" type="video/mp4">
+	</video>
+	<div class="overlay">
+	<label>Strength</label>
+	<button type="submit" class="signupbtn" onclick="likebtn()">like</button>
+	<button type="dislike" class="signupbtn" onclick="dislikebtn()">Unlike</button>
+	<div id="result"></div><br>
+	</div>
+	</div>
+</div> 
+<div class="scrollmenu">
+<h3> Yoga</h3>
+
+ <div>
+	<video id="video1" class="column" width="420" controls>
+    <source src="videoplayback.mp4" alt="cardio" type="video/mp4">	
+	</video>
+	<div class="overlay">
+	<label>Cardio</label>
+	<button type="submit" class="signupbtn" onclick="likebtn()">like</button>
+	<button type="dislike" class="signupbtn" onclick="dislikebtn()">Unlike</button>
+	<div id="result"></div><br>
+	</div>
+	</div>
+	
+	<div>	
+	<video id="video1" width="420" controls>
+    <source src="videoplayback1.mp4"  alt="fitness" type="video/mp4">
+	</video>
+	<div class="overlay">
+	<label>Fitness</label>
+	<button type="submit" class="signupbtn" onclick="likebtn()">like</button>
+	<button type="dislike" class="signupbtn" onclick="dislikebtn()">Unlike</button>
+	<div id="result"></div><br>
+	</div>
+	</div>
+	
+	<div>
+	<video id="video1" width="420" controls>
+    <source src="videoplayback2.mp4"  alt="isolation" type="video/mp4">
+	</video>
+	<div class="overlay">
+	<label>Isolation</label>
+	<button type="submit" class="signupbtn" onclick="likebtn()">like</button>
+	<button type="dislike" class="signupbtn" onclick="dislikebtn()">Unlike</button>
+	<div id="result"></div><br>
+	</div>
+	</div>
+	
+	<div>
+	<video id="video1" width="420" controls>
+    <source src="videoplayback4.mp4"  alt="lean gaining" type="video/mp4">
+	</video>
+	<div class="overlay">
+	<label>Lean Gaining</label>
+	<button type="submit" class="signupbtn" onclick="likebtn()">like</button>
+	<button type="dislike" class="signupbtn" onclick="dislikebtn()">Unlike</button>
+	<div id="result"></div><br>
+	</div>
+	</div>
+	
+	<div>
+	<video id="video1" width="420" controls>
+    <source src="videoplayback3.mp4"  alt="strength" type="video/mp4">
+	</video>
+	<div class="overlay">
+	<label>Strength</label>
+	<button type="submit" class="signupbtn" onclick="likebtn()">like</button>
+	<button type="dislike" class="signupbtn" onclick="dislikebtn()">Unlike</button>
+	<div id="result"></div><br>
+	</div>
+	</div>
+</div>
+</div>
+
+</body>
+
+</html>

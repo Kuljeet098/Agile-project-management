@@ -26,6 +26,8 @@
 <div class="topnav" id="myTopnav">
   <a class="active" href="Home.html">Home</a>
   <a button="logout" href="login.html">Logout</a>
+  <a  href="stats.html">View Statistics</a>
+  <a href="Home - Copy.html">Rate Videos Here</a>
   <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">Search</button>
   </div>
@@ -36,22 +38,24 @@
 
   <div id="myDropdown" class="dropdown-content">
   <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+  <button onclick="sortList()">Sort(A-Z)</button>
 <ul id="myUL">
-<a href="videoplayback.mp4">cardio</a>
-<a href="videoplayback1.mp4">fitness</a>
-<a href="videoplayback2.mp4">isolation</a>
-<a href="videoplayback3.mp4">strength</a>
-<a href="videoplayback4.mp4">lean gaining</a>
+<a href="videoplayback1.mp4" target= "_blank">fitness</a>
+<a href="videoplayback.mp4" target= "_blank">cardio</a>
+<a href="videoplayback3.mp4" target= "_blank">strength</a>
+<a href="videoplayback2.mp4" target= "_blank">isolation</a>
+<a href="videoplayback4.mp4" target= "_blank">lean gaining</a>
 </ul>
 </div>
 <!-- /* Creating Video List */-->
-<h2 align="center">Gallery</h2>
-<div class="scrollmenu">
-<p> Pilates</p>
-	<video id="video1" width="420" controls >
-    <source src="videoplayback.mp4" alt="cardio" type="video/mp4">
+<h2 align="center">Watch videos here</h2>
+<div class="container">
+<div class="scrollmenu" >
+<h3> Aerobics </h3>
+	<video id="video1" width="420" controls>
+    <source src="videoplayback.mp4" alt="cardio" type="video/mp4">	
 	</video>
-	
+
 	<video id="video1" width="420" controls>
     <source src="videoplayback1.mp4"  alt="fitness" type="video/mp4">
 	</video>
@@ -60,84 +64,89 @@
     <source src="videoplayback2.mp4"  alt="isolation" type="video/mp4">
 	</video>
 	
-	<video id="video1" width="420" controls>
-    <source src="videoplayback3.mp4"  alt="strength" type="video/mp4">
-	</video>
 	
 	<video id="video1" width="420" controls>
     <source src="videoplayback4.mp4"  alt="lean gaining" type="video/mp4">
 	</video>
 
-</div> 
-<div class="scrollmenu">
-<p> Yoga</p>
-	<video id="video1" width="420" controls >
-    <source src="videoplayback.mp4" type="video/mp4">
-	</video>
-	
 	<video id="video1" width="420" controls>
-    <source src="videoplayback1.mp4" type="video/mp4">
-	</video>
-	
-	<video id="video1" width="420" controls>
-    <source src="videoplayback2.mp4" type="video/mp4">
-	</video>
-	
-	<video id="video1" width="420" controls>
-    <source src="videoplayback3.mp4" type="video/mp4">
-	</video>
-	
-	<video id="video1" width="420" controls>
-    <source src="videoplayback4.mp4" type="video/mp4">
+    <source src="videoplayback3.mp4"  alt="strength" type="video/mp4">
 	</video>
 
 </div> 
 <div class="scrollmenu">
-<p> Boxing</p>
-	<video id="video1" width="420" controls >
-    <source src="videoplayback.mp4" type="video/mp4">
+<h3> Boxing</h3>
+	<video id="video1" width="420" controls>
+    <source src="videoplayback.mp4" alt="cardio" type="video/mp4">	
+	</video>
+
+	<video id="video1" width="420" controls>
+    <source src="videoplayback1.mp4"  alt="fitness" type="video/mp4">
 	</video>
 	
 	<video id="video1" width="420" controls>
-    <source src="videoplayback1.mp4" type="video/mp4">
+    <source src="videoplayback2.mp4"  alt="isolation" type="video/mp4">
 	</video>
 	
-	<video id="video1" width="420" controls>
-    <source src="videoplayback2.mp4" type="video/mp4">
-	</video>
 	
 	<video id="video1" width="420" controls>
-    <source src="videoplayback3.mp4" type="video/mp4">
+    <source src="videoplayback4.mp4"  alt="lean gaining" type="video/mp4">
 	</video>
-	
+
 	<video id="video1" width="420" controls>
-    <source src="videoplayback4.mp4" type="video/mp4">
+    <source src="videoplayback3.mp4"  alt="strength" type="video/mp4">
 	</video>
 
 </div> 
 <div class="scrollmenu">
-<p> Aerobics</p>
-	<video id="video1" width="420" controls >
-    <source src="videoplayback.mp4" type="video/mp4">
+<h3> Pilates</h3>
+	<video id="video1" width="420" controls>
+    <source src="videoplayback.mp4" alt="cardio" type="video/mp4">	
+	</video>
+
+	<video id="video1" width="420" controls>
+    <source src="videoplayback1.mp4"  alt="fitness" type="video/mp4">
 	</video>
 	
 	<video id="video1" width="420" controls>
-    <source src="videoplayback1.mp4" type="video/mp4">
+    <source src="videoplayback2.mp4"  alt="isolation" type="video/mp4">
 	</video>
 	
-	<video id="video1" width="420" controls>
-    <source src="videoplayback2.mp4" type="video/mp4">
-	</video>
 	
 	<video id="video1" width="420" controls>
-    <source src="videoplayback3.mp4" type="video/mp4">
+    <source src="videoplayback4.mp4"  alt="lean gaining" type="video/mp4">
 	</video>
-	
+
 	<video id="video1" width="420" controls>
-    <source src="videoplayback4.mp4" type="video/mp4">
+    <source src="videoplayback3.mp4"  alt="strength" type="video/mp4">
 	</video>
 
 </div> 
+<div class="scrollmenu">
+<h3> Yoga</h3>
+	<video id="video1" width="420" controls>
+    <source src="videoplayback.mp4" alt="cardio" type="video/mp4">	
+	</video>
+
+	<video id="video1" width="420" controls>
+    <source src="videoplayback1.mp4"  alt="fitness" type="video/mp4">
+	</video>
+	
+	<video id="video1" width="420" controls>
+    <source src="videoplayback2.mp4"  alt="isolation" type="video/mp4">
+	</video>
+	
+	
+	<video id="video1" width="420" controls>
+    <source src="videoplayback4.mp4"  alt="lean gaining" type="video/mp4">
+	</video>
+
+	<video id="video1" width="420" controls>
+    <source src="videoplayback3.mp4"  alt="strength" type="video/mp4">
+	</video>
+
+</div> 
+</div>
 
 
 </body>
